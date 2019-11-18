@@ -1,0 +1,56 @@
+1. Newton Second Law
+
+	READ and SAVE massa
+	READ and SAVE percepatan
+
+	SET resultan AS COMPUTE massa times percepatan
+	DISPLAY resultan
+
+2. Tahun Kabisat
+
+	READ and SAVE tahun
+	SET response_msg_kabisat WITH "Tahun  ini adalah tahun kabisat"
+	SET response_msg_non_kabisat WITH "Tahun ini bukan tahun kabisat"
+
+	IF tahun mod 4 === 0 THEN
+		IF tahun mod 100 !== 0 THEN		
+			DISPLAY response_msg_kabisat
+		ELSE IF tahun mod 100 === 0 and tahun mod 400 === 0
+			DISPLAY response_msg_kabisat
+		ELSE
+			DISPLAY response_msg_non_kabisat
+		END IF
+	ELSE
+		DISPLAY response_msg_non_kabisat
+	END IF
+
+3. Laundry Day
+
+	SET jumlah_pakaian WITH 20
+	SET jumlah_baju_masuk WITH 0
+
+	WHILE  <= jumlah_pakaian
+		ADD jumlah_baju_masuk by 1
+	
+	IF jumlah_baju_masuk === jumlah_pakaian THEN
+		DISPLAY "Mesin siap dinyalakan"
+	ELSE
+		DISPLAY "Belum semua baju masuk Mr. Foxie"
+	END IF
+
+	END WHILE
+
+4. Periksa Kuku
+
+	SET data_murid WITH [{nama: "bejo", kuku: "panjang"}, {nama: "mali", kuku: "pendek"}, {nama: "lexiong", kuku: "pendek"}]
+	SET urutan_cek_murid WITH 0
+	SET jumlah_murid WITH 40
+		
+	WHILE urutan_cek_murid < length of data_murid
+		IF data_murid[urutan_cek_murid].kuku === "panjang"
+			console.log(data_murid[ukuran_cek_murid].nama, " Kuku kamu panjang ya...!!! sini jari kamu *cetok* ")
+		ELSE
+			console.log(data_murid[ukuran_check_murid].nama, " Bagus nak, lanjutkan karyamu... ")
+		END IF
+		ADD urutan_cek_murid by 1
+	END WHILE
