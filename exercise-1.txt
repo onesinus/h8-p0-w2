@@ -29,7 +29,7 @@
 	SET jumlah_pakaian WITH 20
 	SET jumlah_baju_masuk WITH 0
 
-	WHILE  <= jumlah_pakaian
+	WHILE jumlah_baju_masuk <= jumlah_pakaian
 		ADD jumlah_baju_masuk by 1
 	
 	IF jumlah_baju_masuk === jumlah_pakaian THEN
