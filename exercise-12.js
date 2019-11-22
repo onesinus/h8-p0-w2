@@ -1,9 +1,7 @@
 function konversiMenit(menit) {
 	// you can only write your code here!
-	let jamWithMinutes 	= menit / 60; // Dapetin berapa jam dari menit yang dikasih
-	let jamOnly 		= Math.floor(jamWithMinutes);
-	let menitOnly 		= (jamWithMinutes - jamOnly) *60; // Dapatkan sisa menit setelah dikurangi ke jam
-	menitOnly 		= Math.round(menitOnly * 100) / 100; // Pembulatan 2 desimal
+	let menitOnly	= menit % 60;
+	let jamOnly 	= (menit - menitOnly) / 60;
 
 	// Membuat jadi 2 digit (didepannya ada 0) jika hanya 1 digit
 	menitFormat 		= menitOnly.toString().length === 1?"0"+menitOnly:menitOnly; 
