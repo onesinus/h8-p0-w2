@@ -31,14 +31,15 @@
 
 	WHILE jumlah_baju_masuk <= jumlah_pakaian
 		ADD jumlah_baju_masuk by 1
-	
-		IF jumlah_baju_masuk === jumlah_pakaian THEN
-			DISPLAY "Mesin siap dinyalakan"
-		ELSE
-			DISPLAY "Belum semua baju masuk Mr. Foxie"
-		END IF
-
+		DISPLAY jumlah_baju_masuk
 	END WHILE
+
+	IF jumlah_baju_masuk === jumlah_pakaian THEN
+		DISPLAY "Mesin siap dinyalakan"
+	ELSE
+		DISPLAY "Belum semua baju masuk Mr. Foxie"
+	END IF
+
 
 4. Periksa Kuku
 
