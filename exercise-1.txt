@@ -49,9 +49,9 @@
 		
 	WHILE urutan_cek_murid < length of data_murid
 		IF data_murid[urutan_cek_murid].kuku === "panjang"
-			console.log(data_murid[ukuran_cek_murid].nama, " Kuku kamu panjang ya...!!! sini jari kamu *cetok* ")
+			console.log(data_murid[urutan_cek_murid].nama, " Kuku kamu panjang ya...!!! sini jari kamu *cetok* ")
 		ELSE
-			console.log(data_murid[ukuran_check_murid].nama, " Bagus nak, lanjutkan karyamu... ")
+			console.log(data_murid[urutan_cek_murid].nama, " Bagus nak, lanjutkan karyamu... ")
 		END IF
 		ADD urutan_cek_murid by 1
 	END WHILE
